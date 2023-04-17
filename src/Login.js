@@ -19,7 +19,7 @@ function Login () {
         // set configurations
         const configuration = {
             method: "post",
-            url: "https://ordermanagement-backend-rjxa.onrender.com/login",
+            url: "http://localhost:8000/login",
             data: {
             email,
             password,

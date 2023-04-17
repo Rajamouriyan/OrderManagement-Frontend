@@ -11,7 +11,7 @@ function ShowOrderDetails(props) {
 
   useEffect(() => {
     axios
-      .get(`https://ordermanagement-backend-rjxa.onrender.com/api/orders/${id}`)
+      .get(`http://localhost:8000/api/orders/${id}`)
       .then((res) => {
         setOrder(res.data);
       })
@@ -22,7 +22,7 @@ function ShowOrderDetails(props) {
 
   const onDeleteClick = (id) => {
     axios
-      .delete(`https://ordermanagement-backend-rjxa.onrender.com/api/orders/${id}`)
+      .delete(`http://localhost:8000/api/orders/${id}`)
       .then((res) => {
         navigate('/auth');
       })

@@ -18,7 +18,7 @@ function AuthComponent() {
     // set configurations for the API call here
     const configuration = {
       method: "get",
-      url: "https://ordermanagement-backend-rjxa.onrender.com/auth",
+      url: "http://localhost:8000/auth",
       headers: {
         Authorization: `Bearer ${token}`,
       },

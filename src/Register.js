@@ -16,7 +16,7 @@ function Register() {
         // set configurations
     const configuration = {
         method: "post",
-        url: "https://ordermanagement-backend-rjxa.onrender.com/register",
+        url: "http://localhost:8000/register",
         data: {
           email,
           password,
